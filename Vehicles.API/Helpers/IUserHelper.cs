@@ -27,11 +27,11 @@ namespace Vehicles.API.Helpers
 
         Task<bool> IsUserInRoleAsync(User user, string roleName);
 
-        /*Task<SignInResult> LoginAsync(LoginViewModel model);
+        Task<SignInResult> LoginAsync(LoginViewModel model);
 
         Task LogoutAsync();
 
-        Task<IdentityResult> ChangePasswordAsync(User user, string oldPassword, string newPassword);
+        /*Task<IdentityResult> ChangePasswordAsync(User user, string oldPassword, string newPassword);
 
         Task<string> GenerateEmailConfirmationTokenAsync(User user);
 
