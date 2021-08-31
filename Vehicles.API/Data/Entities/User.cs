@@ -39,7 +39,7 @@ namespace Vehicles.API.Data.Entities
         //TODO: Fix the images path
         [Display(Name = "Foto")]
         public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://vehiclessalazar.azurewebsites.net/images/no-image.png"
+            ? $"https://vehiclessalazar.azurewebsites.net/images/no_image.png"
             : $"https://vehiclessalazar.blob.core.windows.net/users/{ImageId}";
 
         
@@ -49,9 +49,9 @@ namespace Vehicles.API.Data.Entities
         [Display(Name = "Usuario")]
         public string FullName => $"{FirstName} {LastName}";
 
-        /*public ICollection<Vehicle> Vehicles { get; set; }
+        public ICollection<Vehicle> Vehicles { get; set; }
 
-        [Display(Name = "# Vehículos")]
+        /*[Display(Name = "# Vehículos")]
         public int VehiclesCount => Vehicles == null ? 0 : Vehicles.Count;*/
     }
 }
